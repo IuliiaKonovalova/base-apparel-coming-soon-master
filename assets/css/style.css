@@ -30,3 +30,15 @@ p {
   margin: 0;
   padding: 0;
 }
+
+/*------ Body Styling------*/
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--ff-primary);
+  font-size: 18px;
+  background-image: url('../images/bg-pattern-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: center/center;
+  background-size: cover;
+}
