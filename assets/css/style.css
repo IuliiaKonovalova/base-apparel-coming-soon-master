@@ -36,8 +36,38 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--ff-primary);
-  font-size: 18px;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.card__container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  height: 100vh;
+}
+
+/*------ Content Container ------*/
+.container1 {
+  background-color: #ffffff;
   background-image: url('../images/bg-pattern-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: center/center;
+  background-size: cover;
+}
+
+.content {
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*------ Image Container ------*/
+.container2 {
+  background-color: #ffffff;
+  background-image: url('../images/hero-desktop.jpg');
   background-repeat: no-repeat;
   background-position: center/center;
   background-size: cover;
