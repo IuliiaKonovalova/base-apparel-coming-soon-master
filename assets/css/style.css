@@ -1,0 +1,14 @@
+:root {
+  --clr-primary--100: hsl(0, 36%, 70%);
+  --clr-primary--300: hsl(0, 93%, 68%);
+  --clr-primary--500: hsl(198, 62%, 26%);
+  --clr-neutral--900: hsl(0, 6%, 24%);
+  --clr-accent--300: #3ebfff;
+  --clr-accent--500: #fad400;
+  --lg-1: linear-gradient(90deg, #ffffff 0%, #fff5f5 50%);
+  --lg-1: linear-gradient(90deg, #f8bfbf 0%, #ee8c8c 50%);
+  --ff-primary: 'Barlow', sans-serif;
+  --ff-accent: 'Fraunces', serif;
+  --br: 1.7em;
+  --br-elements: 0.8em;
+}
