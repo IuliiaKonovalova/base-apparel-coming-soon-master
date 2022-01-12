@@ -5,8 +5,8 @@
   --clr-primary--300: hsl(0, 93%, 68%);
   --clr-primary--500: hsl(198, 62%, 26%);
   --clr-neutral--900: hsl(0, 6%, 24%);
-  --lg-1: linear-gradient(90deg, #ffffff 0%, #fff5f5 50%);
-  --lg-2: linear-gradient(90deg, #f8bfbf 0%, #ee8c8c 50%);
+  --lg-1: linear-gradient(90deg, #fdcbcb 0%, #fdc4c4 50%);
+  --lg-2: linear-gradient(90deg, #f8bfbf 0%, #f09a9a 50%);
   --ff-primary: 'Josefin Sans', sans-serif;
   --br: 2.4em;
   --br-elements: 0.8em;
@@ -167,15 +167,17 @@ input.error {
 
 .btn {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1.1rem 2.8rem;
+  top: -1px;
+  right: -1px;
+  padding: 1.125rem 2.9rem;
   border-radius: var(--br);
   background: var(--lg-2);
   border: none;
 }
 
-
+.btn:hover {
+  background: var(--lg-1);
+}
 
 .email__error {
   color: var(--clr-primary--100);
