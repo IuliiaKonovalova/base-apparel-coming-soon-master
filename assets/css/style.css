@@ -5,8 +5,6 @@
   --clr-primary--300: hsl(0, 93%, 68%);
   --clr-primary--500: hsl(198, 62%, 26%);
   --clr-neutral--900: hsl(0, 6%, 24%);
-  --clr-accent--300: #3ebfff;
-  --clr-accent--500: #fad400;
   --lg-1: linear-gradient(90deg, #ffffff 0%, #fff5f5 50%);
   --lg-2: linear-gradient(90deg, #f8bfbf 0%, #ee8c8c 50%);
   --ff-primary: 'Josefin Sans', sans-serif;
@@ -140,17 +138,17 @@ input:focus {
 
 input::placeholder {
   color: var(--clr-primary--100);
-  font-weight: 700;
+  font-weight: 300;
 }
 
 input:placeholder-shown {
-  color: var(--clr-neutral--900);
-  font-weight: 700;
+  color: var(--clr-primary--100);
+  font-weight: 300;
 }
 
 input:not(:placeholder-shown) {
   color: var(--clr-neutral--900);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 input:focus {
@@ -161,10 +159,24 @@ input:focus {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1rem 2.7rem;
+  padding: 1.1rem 2.8rem;
   border-radius: var(--br);
   background: var(--lg-2);
   border: none;
+}
+
+.email--hidden {
+  border: 2px solid var(--clr-primary--300);
+}
+
+.email__error {
+  color: var(--clr-primary--100);
+  margin: 1rem 1.7rem;
+  display: none;
+}
+
+.email__error--hidden {
+  display: none;
 }
 
 /*------ Image Container ------*/
