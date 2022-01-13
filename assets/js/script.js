@@ -19,17 +19,21 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+/**
+ * Check if the email is valid.
+ * If it is valid it displays a thank you message.
+ * If it is nat valid, displays an error message.
+ */
 const submission = function (e) {
   e.preventDefault();
   const email = emailInput.value;
   if (!validateEmail(email)) {
     submissionForm.classList.add("email__error");
-    submissionForm.classList.remove("validated")
-    console.log("hi")
+    submissionForm.classList.remove("validated");
   } else {
     submissionForm.classList.remove("email__error");
     emailInput.value = "";
-    submissionForm.classList.add("validated")
+    submissionForm.classList.add("validated");
   }
 }
 
