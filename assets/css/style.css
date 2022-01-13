@@ -304,6 +304,11 @@ form.email__error .error__message {
   .photo__holder {
     background-color: blueviolet;
   }
+
+  .attribution {
+    font-size: 0.9rem;
+    color: var(--clr-neutral--900);
+  }
 }
 
 
@@ -317,5 +322,15 @@ form.email__error .error__message {
     font-size: 3rem;
     line-height: 3.5rem;
     margin-top: 0;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 1rem;
+    right: 0.5rem;
+  }
+
+  .attribution {
+    font-size: 0.9rem;
   }
 }
