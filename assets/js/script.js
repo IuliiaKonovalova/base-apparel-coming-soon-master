@@ -21,7 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
 const submission = function (e) {
   e.preventDefault();
   const email = emailInput.value;
-
+  if (!validateEmail(email)) {
+    submissionForm.classList.add("email__error");
+    console.log("hi")
+  } else {
+    submissionForm.classList.remove("email__error")
+  }
 }
 
 /**

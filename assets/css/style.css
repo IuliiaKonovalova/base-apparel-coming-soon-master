@@ -155,7 +155,7 @@ input:focus {
   outline: none;
 }
 
-input.error {
+form.email__error input {
   border: 2px solid var(--clr-primary--300);
 }
 
@@ -163,7 +163,13 @@ input.error {
   position: absolute;
   top: 0.9rem;
   right: 7.5rem;
+  display: none;
 }
+
+form.email__error .image__error {
+  display: block;
+}
+
 
 .btn {
   position: absolute;
@@ -179,15 +185,19 @@ input.error {
   background: var(--lg-1);
 }
 
-.email__error {
+.error__message {
   color: var(--clr-primary--100);
   margin: 1rem 1.7rem;
   display: none;
 }
 
-.email__error--hidden {
-  display: none;
+form.email__error .error__message {
+  display: block;
 }
+
+/* .email__error--hidden {
+  display: none;
+} */
 
 /*------ Image Container ------*/
 .container2 {
