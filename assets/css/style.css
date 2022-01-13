@@ -220,6 +220,26 @@ form.email__error .error__message {
 }
 
 
+/* ----- Foooter ----- */
+
+.footer {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+
+.attribution a {
+  color: hsl(228, 82%, 29%);
+}
+
+/* attribution */
+
 @media screen and (max-width: 1500px) {
   .content__logo {
     margin: 2em 10vw;
