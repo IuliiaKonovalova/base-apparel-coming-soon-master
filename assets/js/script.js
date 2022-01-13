@@ -18,16 +18,21 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
 const submission = function (e) {
   e.preventDefault();
   const email = emailInput.value;
   if (!validateEmail(email)) {
     submissionForm.classList.add("email__error");
+    submissionForm.classList.remove("validated")
     console.log("hi")
   } else {
-    submissionForm.classList.remove("email__error")
+    submissionForm.classList.remove("email__error");
+    emailInput.value = "";
+    submissionForm.classList.add("validated")
   }
 }
+
 
 /**
  * Function to validate email input

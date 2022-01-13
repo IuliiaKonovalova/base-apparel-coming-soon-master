@@ -105,7 +105,7 @@ body {
   line-height: 2rem;
 }
 
-.content__email {
+.form {
   grid-row: 4/5;
   grid-column: 2/3;
   position: relative;
@@ -155,7 +155,7 @@ input:focus {
   outline: none;
 }
 
-form.email__error input {
+.form.email__error input {
   border: 2px solid var(--clr-primary--300);
 }
 
@@ -166,12 +166,11 @@ form.email__error input {
   display: none;
 }
 
-form.email__error .image__error {
+.form.email__error .image__error {
   display: block;
 }
 
-
-.btn {
+.form .btn {
   position: absolute;
   top: -1px;
   right: -1px;
@@ -195,9 +194,16 @@ form.email__error .error__message {
   display: block;
 }
 
-/* .email__error--hidden {
+.thanks__message {
+  color: var(--clr-primary--100);
+  margin: 1rem 1.7rem;
   display: none;
-} */
+}
+
+.form.validated .thanks__message {
+  display: block;
+}
+
 
 /*------ Image Container ------*/
 .container2 {
