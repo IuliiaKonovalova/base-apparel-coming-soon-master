@@ -221,7 +221,6 @@ form.email__error .error__message {
 
 
 /* ----- Foooter ----- */
-
 .footer {
   position: absolute;
   bottom: 2rem;
@@ -257,7 +256,7 @@ form.email__error .error__message {
   .card__container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2fr 3fr;
+    grid-template-rows: 0.3fr 1fr 1.7fr;
     height: unset;
     min-height: 100vh;
   }
@@ -274,24 +273,36 @@ form.email__error .error__message {
   .container1 {
     grid-row: 3/4;
     grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .content {
-    grid-template-rows: 3fr 1fr 2fr;
-    grid-template-columns: 1fr 2.2fr 1fr;
-    gap: 2rem;
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .content__incentive {
     text-align: center;
-    margin-top: 4rem;
+    align-self: center;
+    justify-self: center;
   }
 
   .content__paragraph {
     text-align: center;
+    max-width: 60%;
+    margin: 2rem 0 3rem 0;
+  }
+
+  .form {
+    max-width: 60%;
+    width: 100%;
   }
 
   .container2 {
@@ -305,6 +316,12 @@ form.email__error .error__message {
     background-color: blueviolet;
   }
 
+  .footer {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+  }
+
   .attribution {
     font-size: 0.9rem;
     color: var(--clr-neutral--900);
@@ -312,22 +329,26 @@ form.email__error .error__message {
 }
 
 
-@media screen and (max-width: 500px) {
-  .content {
-    grid-template-rows: 2fr 1fr 2fr;
-    gap: 2rem;
+@media screen and (max-width: 650px) {
+
+  .content__paragraph {
+    text-align: center;
+    max-width: 80%;
   }
+
+  .form {
+    max-width: 80%;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
 
   .content__incentive {
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 3.5rem;
-    margin-top: 0;
-  }
-
-  .footer {
-    position: absolute;
-    bottom: 1rem;
-    right: 0.5rem;
+    letter-spacing: 0.5rem;
   }
 
   .attribution {
