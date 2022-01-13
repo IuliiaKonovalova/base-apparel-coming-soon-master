@@ -317,6 +317,7 @@ form.email__error .error__message {
   }
 
   .footer {
+    margin-top: 3rem;
     all: unset;
     display: flex;
     flex-direction: column;
