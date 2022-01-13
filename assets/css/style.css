@@ -317,15 +317,20 @@ form.email__error .error__message {
   }
 
   .footer {
-    margin-top: 3rem;
+
     all: unset;
     display: flex;
     flex-direction: column;
   }
 
   .attribution {
+    padding: 3rem 0;
     font-size: 0.9rem;
     color: var(--clr-neutral--900);
+  }
+
+  .attribution a {
+    color: hsl(228, 82%, 29%);
   }
 }
 
